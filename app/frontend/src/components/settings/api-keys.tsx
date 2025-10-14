@@ -14,65 +14,65 @@ interface ApiKey {
 }
 
 const FINANCIAL_API_KEYS: ApiKey[] = [
-  {
-    key: 'FINANCIAL_DATASETS_API_KEY',
-    label: 'Financial Datasets API',
-    description: 'For getting financial data to power the hedge fund',
-    url: 'https://financialdatasets.ai/',
-    placeholder: 'your-financial-datasets-api-key'
-  }
+  // {
+  //   key: 'FINANCIAL_DATASETS_API_KEY',
+  //   label: 'Financial Datasets API',
+  //   description: 'For getting financial data to power the hedge fund',
+  //   url: 'https://financialdatasets.ai/',
+  //   placeholder: 'your-financial-datasets-api-key'
+  // }
 ];
 
 const LLM_API_KEYS: ApiKey[] = [
-  {
-    key: 'ANTHROPIC_API_KEY',
-    label: 'Anthropic API',
-    description: 'For Claude models (claude-4-sonnet, claude-4.1-opus, etc.)',
-    url: 'https://anthropic.com/',
-    placeholder: 'your-anthropic-api-key'
-  },
-  {
-    key: 'DEEPSEEK_API_KEY',
-    label: 'DeepSeek API',
-    description: 'For DeepSeek models (deepseek-chat, deepseek-reasoner, etc.)',
-    url: 'https://deepseek.com/',
-    placeholder: 'your-deepseek-api-key'
-  },
-  {
-    key: 'GROQ_API_KEY',
-    label: 'Groq API',
-    description: 'For Groq-hosted models (deepseek, llama3, etc.)',
-    url: 'https://groq.com/',
-    placeholder: 'your-groq-api-key'
-  },
-  {
-    key: 'GOOGLE_API_KEY',
-    label: 'Google API',
-    description: 'For Gemini models (gemini-2.5-flash, gemini-2.5-pro)',
-    url: 'https://ai.dev/',
-    placeholder: 'your-google-api-key'
-  },
-  {
-    key: 'OPENAI_API_KEY',
-    label: 'OpenAI API',
-    description: 'For OpenAI models (gpt-4o, gpt-4o-mini, etc.)',
-    url: 'https://platform.openai.com/',
-    placeholder: 'your-openai-api-key'
-  },
-  {
-    key: 'OPENROUTER_API_KEY',
-    label: 'OpenRouter API',
-    description: 'For OpenRouter models (gpt-4o, gpt-4o-mini, etc.)',
-    url: 'https://openrouter.ai/',
-    placeholder: 'your-openrouter-api-key'
-  },
-  {
-    key: 'GIGACHAT_API_KEY',
-    label: 'GigaChat API',
-    description: 'For GigaChat models (GigaChat-2-Max, etc.)',
-    url: 'https://github.com/ai-forever/gigachat',
-    placeholder: 'your-gigachat-api-key'
-  }
+  // {
+  //   key: 'ANTHROPIC_API_KEY',
+  //   label: 'Anthropic API',
+  //   description: 'For Claude models (claude-4-sonnet, claude-4.1-opus, etc.)',
+  //   url: 'https://anthropic.com/',
+  //   placeholder: 'your-anthropic-api-key'
+  // },
+  // {
+  //   key: 'DEEPSEEK_API_KEY',
+  //   label: 'DeepSeek API',
+  //   description: 'For DeepSeek models (deepseek-chat, deepseek-reasoner, etc.)',
+  //   url: 'https://deepseek.com/',
+  //   placeholder: 'your-deepseek-api-key'
+  // },
+  // {
+  //   key: 'GROQ_API_KEY',
+  //   label: 'Groq API',
+  //   description: 'For Groq-hosted models (deepseek, llama3, etc.)',
+  //   url: 'https://groq.com/',
+  //   placeholder: 'your-groq-api-key'
+  // },
+  // {
+  //   key: 'GOOGLE_API_KEY',
+  //   label: 'Google API',
+  //   description: 'For Gemini models (gemini-2.5-flash, gemini-2.5-pro)',
+  //   url: 'https://ai.dev/',
+  //   placeholder: 'your-google-api-key'
+  // },
+  // {
+  //   key: 'OPENAI_API_KEY',
+  //   label: 'OpenAI API',
+  //   description: 'For OpenAI models (gpt-4o, gpt-4o-mini, etc.)',
+  //   url: 'https://platform.openai.com/',
+  //   placeholder: 'your-openai-api-key'
+  // },
+  // {
+  //   key: 'OPENROUTER_API_KEY',
+  //   label: 'OpenRouter API',
+  //   description: 'For OpenRouter models (gpt-4o, gpt-4o-mini, etc.)',
+  //   url: 'https://openrouter.ai/',
+  //   placeholder: 'your-openrouter-api-key'
+  // },
+  // {
+  //   key: 'GIGACHAT_API_KEY',
+  //   label: 'GigaChat API',
+  //   description: 'For GigaChat models (GigaChat-2-Max, etc.)',
+  //   url: 'https://github.com/ai-forever/gigachat',
+  //   placeholder: 'your-gigachat-api-key'
+  // }
 ];
 
 export function ApiKeysSettings() {
