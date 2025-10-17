@@ -31,13 +31,9 @@ start_backend() {
     check_venv
     
     echo "Starting backend server..."
-    cd "$PROJECT_ROOT"
-    
-    nohup "$VENV_DIR/bin/uvicorn" app.backend.main:app \
-        --host 0.0.0.0 \
-        --port 8000 \
-        --log-level info \
-        > "$LOG_FILE" 2>&1 &
+    cd "$BACKEND_DIR"
+    source ../../venv/bin/activate
+    poetry run uvicorn app.backend.main:app --reload --host 127.0.0.1 --port 8000 > "$LOG_DIR/backend.log" 2>&1 &    
     
     echo $! > "$PID_FILE"
     echo "Backend started (PID: $(cat $PID_FILE))"
