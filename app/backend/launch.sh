@@ -3,7 +3,7 @@
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 BACKEND_DIR="$SCRIPT_DIR"
-VENV_DIR="$PROJECT_ROOT/.venv"
+VENV_DIR="$PROJECT_ROOT/venv"
 PID_FILE="$BACKEND_DIR/backend.pid"
 LOG_FILE="$BACKEND_DIR/backend.log"
 SERVICE_NAME="ai-hedge-fund-backend"

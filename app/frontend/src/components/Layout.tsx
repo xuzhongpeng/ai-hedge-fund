@@ -15,8 +15,7 @@ import { ReactFlowProvider } from '@xyflow/react';
 import { ReactNode, useEffect, useState } from 'react';
 import { TopBar } from './layout/top-bar';
 
-// Create a LayoutContent component to access the FlowContext, TabsContext, and LayoutContext
-function LayoutContent({ children }: { children: ReactNode }) {
+function LayoutContent() {
   const { reactFlowInstance } = useFlowContext();
   const { openTab } = useTabsContext();
   const { isBottomCollapsed, expandBottomPanel, collapseBottomPanel, toggleBottomPanel } = useLayoutContext();
@@ -180,18 +179,14 @@ function LayoutContent({ children }: { children: ReactNode }) {
   );
 }
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-export function Layout({ children }: LayoutProps) {
+export function Layout() {
   return (
     <SidebarProvider defaultOpen={true}>
       <ReactFlowProvider>
         <FlowProvider>
           <TabsProvider>
             <LayoutProvider>
-              <LayoutContent>{children}</LayoutContent>
+              <LayoutContent />
             </LayoutProvider>
           </TabsProvider>
         </FlowProvider>

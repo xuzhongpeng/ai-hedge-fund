@@ -299,7 +299,7 @@ start_services() {
     # Open browser after frontend is running
     print_status "Opening web browser..."
     sleep 2  # Give frontend a moment to fully start
-    open_browser "http://localhost:5173"
+    # open_browser "http://localhost:5173"
     
     echo ""
     print_success "🚀 AI Hedge Fund web application is now running!"
