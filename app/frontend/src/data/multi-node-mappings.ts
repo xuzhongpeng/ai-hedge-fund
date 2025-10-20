@@ -12,8 +12,8 @@ export interface MultiNodeDefinition {
 }
 
 const multiNodeDefinition: Record<string, MultiNodeDefinition> = {
-  "Value Investors": {
-    name: "Value Investors",
+  "价值投资者": {
+    name: "价值投资者",
     nodes: [
       { componentName: "Stock Input", offsetX: 0, offsetY: 0 },
       { componentName: "Ben Graham", offsetX: 400, offsetY: -400 },
@@ -30,8 +30,8 @@ const multiNodeDefinition: Record<string, MultiNodeDefinition> = {
       { source: "Warren Buffett", target: "Portfolio Manager" },
     ],
   },
-  "Data Wizards": {
-    name: "Data Wizards",
+  "数据向导": {
+    name: "数据向导",
     nodes: [
       { componentName: "Stock Input", offsetX: 0, offsetY: 0 },
       { componentName: "Technical Analyst", offsetX: 400, offsetY: -550 },
@@ -52,8 +52,8 @@ const multiNodeDefinition: Record<string, MultiNodeDefinition> = {
 
     ],
   },
-  "Market Mavericks": {
-    name: "Market Mavericks",
+  "市场向导": {
+    name: "市场向导",
     nodes: [
       { componentName: "Stock Input", offsetX: 0, offsetY: 0 },
       { componentName: "Michael Burry", offsetX: 400, offsetY: -400 },

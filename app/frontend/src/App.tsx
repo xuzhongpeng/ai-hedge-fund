@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './components/layout';
+import { Layout } from './components/Layout';
 import { Toaster } from './components/ui/sonner';
 import { AuthProvider } from './contexts/auth-context';
 import LoginPage from './pages/login';

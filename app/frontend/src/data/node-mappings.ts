@@ -98,6 +98,7 @@ const getNodeTypeDefinitions = async (): Promise<Record<string, NodeTypeDefiniti
         position,
         data: {
           name: agent.display_name,
+          chinese_name: agent.chinese_name,
           description: agent.investing_style || "",
           status: "Idle",
         },

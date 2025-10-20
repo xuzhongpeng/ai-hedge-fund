@@ -39,7 +39,7 @@ export function ComponentItemGroup({
               icon={item.icon} 
               label={item.name} 
               isActive={activeItem === item.name}
-              onClick={() => handleItemClick(item.name)}
+              onClick={() => handleItemClick(item.key ?? item.name)}
             />
           ))}
         </div>

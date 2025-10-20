@@ -15,6 +15,7 @@ import { Agent, getAgents } from './agents';
 // Define component items by group
 export interface ComponentItem {
   name: string;
+  key?: string;
   icon: LucideIcon;
 }
 
@@ -46,7 +47,8 @@ export const getComponentGroups = async (): Promise<ComponentGroup[]> => {
       icon: Bot,
       iconColor: "text-red-500",
       items: agents.map((agent: Agent) => ({
-        name: agent.display_name,
+        name: agent.chinese_name ?? agent.display_name,
+        key: agent.display_name,
         icon: Bot
       }))
     },
@@ -55,9 +57,9 @@ export const getComponentGroups = async (): Promise<ComponentGroup[]> => {
       icon: Network,
       iconColor: "text-yellow-500",
       items: [
-        { name: "Data Wizards", icon: Calculator },
-        { name: "Market Mavericks", icon: Zap },
-        { name: "Value Investors", icon: BadgeDollarSign },
+        { name: "价值投资者", icon: Calculator },
+        { name: "数据向导", icon: Zap },
+        { name: "市场向导", icon: BadgeDollarSign },
       ]
     },
     {

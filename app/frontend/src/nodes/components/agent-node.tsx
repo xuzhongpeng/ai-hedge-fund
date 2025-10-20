@@ -80,7 +80,7 @@ export function AgentNode({
       isConnectable={isConnectable}
       icon={<Bot className="h-5 w-5" />}
       iconColor={getStatusColor(status)}
-      name={data.name || "Agent"}
+      name={(data.chinese_name ??  data.name) || "Agent"}
       description={data.description}
       status={status}
     >
@@ -137,7 +137,7 @@ export function AgentNode({
         <AgentOutputDialog
           isOpen={isDialogOpen}
           onOpenChange={setIsDialogOpen}
-          name={data.name || "Agent"}
+          name={(data.chinese_name ?? data.name) || "Agent"}
           nodeId={id}
           flowId={currentFlowId?.toString() || null}
         />
